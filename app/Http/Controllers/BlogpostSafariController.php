@@ -6,8 +6,7 @@ class BlogpostSafariController
 {
     public function show()
     {
-        return view('blogpostSafari');;
-
+        return view('blogpostSafari');
+        ;
     }
-
 }

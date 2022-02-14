@@ -6,8 +6,7 @@ class FaqController
 {
     public function show()
     {
-        return view('Faq');;
-
+        return view('Faq');
+        ;
     }
-
 }

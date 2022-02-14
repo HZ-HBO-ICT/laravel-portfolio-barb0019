@@ -6,8 +6,7 @@ class BlogController
 {
     public function show()
     {
-        return view('Blog');;
-
+        return view('Blog');
+        ;
     }
-
 }

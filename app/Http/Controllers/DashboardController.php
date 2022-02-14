@@ -6,8 +6,7 @@ class DashboardController
 {
     public function show()
     {
-        return view('Dashboard');;
-
+        return view('Dashboard');
+        ;
     }
-
 }
