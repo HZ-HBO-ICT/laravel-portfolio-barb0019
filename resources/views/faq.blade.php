@@ -9,7 +9,7 @@
 <body>
 <main>
     <nav>
-        <a class="button-color" href="/public/" style="color: oldlace;">Home</a>
+        <a class="button-color" href="/" style="color: oldlace;">Home</a>
         <a class="button-color" href="blog" style="color: oldlace;">Blog</a>
         <a class="button-color" href="dashboard" style="color: oldlace;">Dashboard</a>
         <a class="button-color" href="Faq" style="color: oldlace;">FAQ</a>
