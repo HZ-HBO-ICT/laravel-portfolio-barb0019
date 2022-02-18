@@ -2,11 +2,14 @@
 
 namespace app\Http\Controllers;
 
+use App\Models\Grades;
+
 class DashboardController
 {
     public function show()
     {
-        return view('Dashboard');
+        $grades = Grades::all();
+        return view('Dashboard', ['grades' => $grades]);
         ;
     }
 }
