@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="nl">
-
-<head>
-    <link rel="stylesheet" href="stylenew.css">
+@extends('layout')
+@section('content')
     <title>bedrijvensafari</title>
-</head>
-
-<body>
-<nav>
-    <a class="button-color" href="/" style="color: oldlace;">Home</a>
-    <a class="button-color" href="blog" style="color: oldlace;">Blog</a>
-    <a class="button-color" href="dashboard" style="color: oldlace;">Dashboard</a>
-    <a class="button-color" href="Faq" style="color: oldlace;">FAQ</a>
-    <a class="button-color" href="profile" style="color: oldlace;">Profiel</a>
-</nav>
 <div class="row">
     <div class="leftcolumn-bpost-safari">
         <div class="card">
@@ -275,3 +262,4 @@
 </body>
 
 </html>
+@endsection
