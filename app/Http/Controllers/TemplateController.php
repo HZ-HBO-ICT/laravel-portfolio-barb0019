@@ -1,20 +1,11 @@
 <?php
 
-namespace app\Http\Controllers;
+namespace App\Http\Controllers;
 
-use App\Models\faq;
 use Illuminate\Http\Request;
 
-class FaqController
+class TemplateController extends Controller
 {
-    public function show()
-    {
-        $posts = faq::all();
-        return view('Faq', [
-            'posts' => $posts
-        ]);
-        ;
-    }
     /**
      * Display a listing of the resource.
      *
@@ -32,7 +23,6 @@ class FaqController
      */
     public function create()
     {
-        return view('faq-create');
         //
     }
 
@@ -44,17 +34,19 @@ class FaqController
      */
     public function store(Request $request)
     {
-        $post = new Faq();
-
-        $post->questions = request('questions');
-        $post->answers = request('answers');
-        $post->save();
-
-        return redirect('/Faq');
         //
     }
 
-
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
 
     /**
      * Show the form for editing the specified resource.

@@ -25,6 +25,8 @@ use App\Http\Controllers\BlogpostSafariController;
 Route::get('/', [WelcomeController::class, 'show']);
 Route::get('/blog', [BlogController::class, 'show']);
 Route::get('/profile', [ProfileController::class, 'show']);
+Route::get('/Faq/create', [FaqController::class, 'create']);
+Route::post('/Faq', [FaqController::class, 'store']);
 Route::get('/Faq', [FaqController::class, 'show']);
 Route::get('/dashboard', [DashboardController::class, 'show']);
 Route::get('/blogpost', [BlogpostSafariController::class, 'show']);

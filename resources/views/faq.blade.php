@@ -70,6 +70,7 @@
 {{--                        bouwwerkzaamheden voor het Joint Research Center Zeeland.--}}
 {{--                        <br>Je kan via het kruispunt bij de stoplichten oversteken.--}}
 {{--                    </p>--}}
+                    <h2>Stel je vragen <a href="/Faq/create" style="color: black" >hier</a></h2>
                 </article>
             </div>
         </div>

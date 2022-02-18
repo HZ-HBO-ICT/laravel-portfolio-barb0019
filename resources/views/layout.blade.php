@@ -2,7 +2,7 @@
 <html lang="nl">
 
 <head>
-    <link rel="stylesheet" href="stylenew.css">
+    <link rel="stylesheet" href="/stylenew.css">
     <style>
         .current_page_item{
             background-color: white;
@@ -10,7 +10,7 @@
             padding: 3px;
             border-radius: 10px;
         }
-
+.label{color: white}
     </style>
 </head>
 
