@@ -95,8 +95,8 @@
             </div>
         </div>
     </div>
-</main>
-</body>
+    </main>
+    </body>
 
-</html>
+    </html>
 @endsection

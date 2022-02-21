@@ -5,8 +5,6 @@ namespace app\Http\Controllers;
 use App\Models\Article;
 use Illuminate\Http\Request;
 
-
-
 class BlogController
 {
     public function show()
@@ -40,5 +38,27 @@ class BlogController
 
         return redirect('/blog');
         //
+    }
+    public function edit($id)
+    {
+        return view('edit', ['articles' => Article::find($id)]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $article = Article::find($id);
+
+        $article->title = request('title');
+        $article->body = request('body');
+        $article->save();
+
+        return redirect('/blog');
+        //
+    }
+    public function destroy($id)
+    {
+        $article = Article::find($id);
+        $article->delete();
+        return redirect('/blog');
     }
 }
