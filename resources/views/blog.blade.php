@@ -8,6 +8,7 @@
                 <h2>{{$article->title}}</h2>
                 <p>{{$article->body}}</p>
             @endforeach()
+              <h2>  <a href="/blog/create" style="color: black">Post een blog</a> </h2>
 {{--            <h2>Mijn studiekeuze</h2>--}}
 {{--            <p>Ik wil graag HBO-ICT studeren, omdat ik de wereld van IT heel interessant vind. In mijn vrije tijd ben ik--}}
 {{--                regelmatig bezig met zowel software als hardware. Ik zou graag mijn kennis willen verrijken en waar kan--}}
