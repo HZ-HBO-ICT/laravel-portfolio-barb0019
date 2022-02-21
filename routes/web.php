@@ -7,6 +7,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BlogpostSafariController;
+use App\Models\Article;
 
 /*
 |--------------------------------------------------------------------------

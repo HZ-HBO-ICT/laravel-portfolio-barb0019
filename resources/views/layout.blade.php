@@ -2,7 +2,7 @@
 <html lang="nl">
 
 <head>
-    <link rel="stylesheet" href="/stylenew.css">
+    <link rel="stylesheet" href="{{asset('stylenew.css')}}">
     <style>
         .current_page_item{
             background-color: white;

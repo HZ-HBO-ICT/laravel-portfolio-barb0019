@@ -4,40 +4,44 @@
 <div class="row">
     <div class="leftcolumn">
         <div class="card">
-            <h2>Mijn studiekeuze</h2>
-            <p>Ik wil graag HBO-ICT studeren, omdat ik de wereld van IT heel interessant vind. In mijn vrije tijd ben ik
-                regelmatig bezig met zowel software als hardware. Ik zou graag mijn kennis willen verrijken en waar kan
-                dat
-                beter dan op de HZ! ICT neemt tegenwoordig de wereld over. ICT zie je overal terug, dus de vraag naar
-                ICT
-                neemt ook toe. Genoeg werk aan de winkel dus voor ICT' ers! Ik wil dus graag deze opleiding doen, zodat
-                ik in
-                de toekomst genoeg werk heb en bezig kan zijn met datgene wat mij werkelijk boeit.</p>
-            <h2>SWOT-Analyse</h2>
-            <p>Strenghts: Ik ben leergierig. Ik wil dingen niet alleen onthouden maar ook echt begrijpen.
-                <br>
-                <br>
-                Weaknesses: Ik ben soms te leergierig, probeer dingen soms tot de bodem te begrijpen en dat gaat niet
-                altijd.
-                Als ik een paar dingen achter elkaar niet begrijp heb ik het gevoel dat ik niks begrijp.
-                <br>
-                <br>
-                Opportunities: Dat ik mijn kennis over progammeren in 4 jaar dusdanig heb vergroot dat ik direct op de
-                arbeidsmarkt aan de slag kan.
-                <br>
-                <br>
-                threats: Omdat ik alles zo goed mogelijk wil begrijpen ben ik bang dat mijn tempo nu nog iets te laag is
-                voor
-                het HBO.
-                Ik heb nog geen ervaring met programmeren en ben bang dat het in het begin te snel gaat.
-            </p>
-            <h2>Feedback op de SWOT-Analyse</h2>
-            <p>Ik ben helaas geskipt door Daphne en heb geen feedback gekregen :(.</p>
-            <h2>Blogposts:</h2>
-            <h4> Op 10-09-2021 ben ik op bedrijvensafari geweest! Ik heb verschillende presentaties <br> gevolgd en heb
-                een
-                field research gedaan naar deze bedrijven? Benieuwd wat mijn <br> bevindingen waren? <a
-                    href="blogpost" target="_blank" style="color: black;">klik dan hier</a></h4>
+            @foreach($articles as $article)
+                <h2>{{$article->title}}</h2>
+                <p>{{$article->body}}</p>
+            @endforeach()
+{{--            <h2>Mijn studiekeuze</h2>--}}
+{{--            <p>Ik wil graag HBO-ICT studeren, omdat ik de wereld van IT heel interessant vind. In mijn vrije tijd ben ik--}}
+{{--                regelmatig bezig met zowel software als hardware. Ik zou graag mijn kennis willen verrijken en waar kan--}}
+{{--                dat--}}
+{{--                beter dan op de HZ! ICT neemt tegenwoordig de wereld over. ICT zie je overal terug, dus de vraag naar--}}
+{{--                ICT--}}
+{{--                neemt ook toe. Genoeg werk aan de winkel dus voor ICT' ers! Ik wil dus graag deze opleiding doen, zodat--}}
+{{--                ik in--}}
+{{--                de toekomst genoeg werk heb en bezig kan zijn met datgene wat mij werkelijk boeit.</p>--}}
+{{--            <h2>SWOT-Analyse</h2>--}}
+{{--            <p>Strenghts: Ik ben leergierig. Ik wil dingen niet alleen onthouden maar ook echt begrijpen.--}}
+{{--                <br>--}}
+{{--                <br>--}}
+{{--                Weaknesses: Ik ben soms te leergierig, probeer dingen soms tot de bodem te begrijpen en dat gaat niet--}}
+{{--                altijd.--}}
+{{--                Als ik een paar dingen achter elkaar niet begrijp heb ik het gevoel dat ik niks begrijp.--}}
+{{--                <br>--}}
+{{--                <br>--}}
+{{--                Opportunities: Dat ik mijn kennis over progammeren in 4 jaar dusdanig heb vergroot dat ik direct op de--}}
+{{--                arbeidsmarkt aan de slag kan.--}}
+{{--                <br>--}}
+{{--                <br>--}}
+{{--                threats: Omdat ik alles zo goed mogelijk wil begrijpen ben ik bang dat mijn tempo nu nog iets te laag is--}}
+{{--                voor--}}
+{{--                het HBO.--}}
+{{--                Ik heb nog geen ervaring met programmeren en ben bang dat het in het begin te snel gaat.--}}
+{{--            </p>--}}
+{{--            <h2>Feedback op de SWOT-Analyse</h2>--}}
+{{--            <p>Ik ben helaas geskipt door Daphne en heb geen feedback gekregen :(.</p>--}}
+{{--            <h2>Blogposts:</h2>--}}
+{{--            <h4> Op 10-09-2021 ben ik op bedrijvensafari geweest! Ik heb verschillende presentaties <br> gevolgd en heb--}}
+{{--                een--}}
+{{--                field research gedaan naar deze bedrijven? Benieuwd wat mijn <br> bevindingen waren? <a--}}
+{{--                    href="blogpost" target="_blank" style="color: black;">klik dan hier</a></h4>--}}
         </div>
     </div>
     <div class="rightcolumn">

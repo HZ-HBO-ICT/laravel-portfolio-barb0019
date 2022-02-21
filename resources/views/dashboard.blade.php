@@ -1,66 +1,71 @@
 @extends('layout')
 @section('content')
     <title>homepagina</title>
-<div class="row">
-    <div class="leftcolumn">
-        <div class="card">
-            <table>
-                <tr class="rij-donker">
-                    <th>Kwartaal</th>
-                    <th>Vak</th>
-                    <th>EC</th>
-                    <th>toets</th>
-                    <th>Cijfer</th>
-                </tr>
-                @foreach($grades as $grade)
-                <tr>
-{{--                    <td>1</td>--}}
-{{--                    <td>Computer Science Basics <br> Program- & Career Orientation <br>Programming Basics</td>--}}
-{{--                    <td>5 EC<br> 2,5 EC <br> 5 EC</td>--}}
-{{--                    <td>Written exam<br> Assessment exam <br> Case study exam</td>--}}
-{{--                    <td>7.2<br> 9.3 <br> -</td>--}}
-                    <td>{{$grade->quartile}}</td>
-                    <td>{{$grade->course_name}}</td>
-                    <td>{{$grade->EC}}</td>
-                    <td>{{$grade->test_name}}</td>
-                    <td>{{$grade->best_grade}}</td>
-                </tr>
-                @endforeach
-{{--                <tr class="rij-donker">--}}
-{{--                    <td>2</td>--}}
-{{--                    <td>Object Oriented Programming</td>--}}
-{{--                    <td>10 EC</td>--}}
-{{--                    <td>Case study, Project</td>--}}
-{{--                    <td>-</td>--}}
-{{--                </tr>--}}
-{{--                <tr>--}}
-{{--                    <td>3</td>--}}
-{{--                    <td>Framework Project 1 <br>Framework Development 1</td>--}}
-{{--                    <td>7,5 EC <br> 5 EC</td>--}}
-{{--                    <td>Project, Assesment, Report <br>Case study</td>--}}
-{{--                    <td>- <br> -</td>--}}
-{{--                </tr>--}}
-{{--                <tr class="rij-donker">--}}
-{{--                    <td>4</td>--}}
-{{--                    <td>Framework Project 2</td>--}}
-{{--                    <td>10 EC</td>--}}
-{{--                    <td>Portfolio, Project, Assessment</td>--}}
-{{--                    <td>-</td>--}}
-{{--                </tr>--}}
-{{--                <tr>--}}
-{{--                    <td>hele jaar</td>--}}
-{{--                    <td>PPD <br> IT personality</td>--}}
-{{--                    <td>12,5 EC <br> 2,5 EC</td>--}}
-{{--                    <td>portfolio <br> Projectweek, ...</td>--}}
-{{--                    <td>- <br> 1.25</td>--}}
-{{--                </tr>--}}
-{{--            </table>--}}
-            <br>
-            <div id="progress"></div>
-            <!--60 studiepunten = 100%
-          45 studiepunten nodig om door te gaan = 75%
-          -->
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <table>
+                    <tr class="rij-donker">
+                        <th>Kwartaal</th>
+                        <th>Vak</th>
+                        <th>EC</th>
+                        <th>toets</th>
+                        <th>Cijfer</th>
+                    </tr>
+                    @foreach($grades as $grade)
+                        <tr>
+                            {{--                    <td>1</td>--}}
+                            {{--                    <td>Computer Science Basics <br> Program- & Career Orientation <br>Programming Basics</td>--}}
+                            {{--                    <td>5 EC<br> 2,5 EC <br> 5 EC</td>--}}
+                            {{--                    <td>Written exam<br> Assessment exam <br> Case study exam</td>--}}
+                            {{--                    <td>7.2<br> 9.3 <br> -</td>--}}
+                            <td>{{$grade->quartile}}</td>
+                            <td>{{$grade->course_name}}</td>
+                            <td>{{$grade->EC}}</td>
+                            <td>{{$grade->test_name}}</td>
+                            <td>{{$grade->best_grade}}</td>
+                        </tr>
+                    @endforeach
+                    {{--                <tr class="rij-donker">--}}
+                    {{--                    <td>2</td>--}}
+                    {{--                    <td>Object Oriented Programming</td>--}}
+                    {{--                    <td>10 EC</td>--}}
+                    {{--                    <td>Case study, Project</td>--}}
+                    {{--                    <td>-</td>--}}
+                    {{--                </tr>--}}
+                    {{--                <tr>--}}
+                    {{--                    <td>3</td>--}}
+                    {{--                    <td>Framework Project 1 <br>Framework Development 1</td>--}}
+                    {{--                    <td>7,5 EC <br> 5 EC</td>--}}
+                    {{--                    <td>Project, Assesment, Report <br>Case study</td>--}}
+                    {{--                    <td>- <br> -</td>--}}
+                    {{--                </tr>--}}
+                    {{--                <tr class="rij-donker">--}}
+                    {{--                    <td>4</td>--}}
+                    {{--                    <td>Framework Project 2</td>--}}
+                    {{--                    <td>10 EC</td>--}}
+                    {{--                    <td>Portfolio, Project, Assessment</td>--}}
+                    {{--                    <td>-</td>--}}
+                    {{--                </tr>--}}
+                    {{--                <tr>--}}
+                    {{--                    <td>hele jaar</td>--}}
+                    {{--                    <td>PPD <br> IT personality</td>--}}
+                    {{--                    <td>12,5 EC <br> 2,5 EC</td>--}}
+                    {{--                    <td>portfolio <br> Projectweek, ...</td>--}}
+                    {{--                    <td>- <br> 1.25</td>--}}
+                    {{--                </tr>--}}
+                    {{--            </table>--}}
+                    <br>
+                    <div id="progress"></div>
+                    <!--60 studiepunten = 100%
+                  45 studiepunten nodig om door te gaan = 75%
+                  -->
+                </table>
+            </div>
         </div>
+    </div>
+
+
     </div>
     <div class="rightcolumn">
         <div class="card">
@@ -90,7 +95,7 @@
             </ul>
         </div>
     </div>
-</div>
-</body>
-</html>
+    </div>
+    </body>
+    </html>
 @endsection

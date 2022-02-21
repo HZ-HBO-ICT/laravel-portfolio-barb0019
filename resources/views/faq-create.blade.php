@@ -5,7 +5,7 @@
         <div class="field">
             <label class="label" for="questions">Question</label>
             <div class="control">
-                <input class="input" type="text" name="questions" id="questions">
+                <input class="input" type="text" name="questions" id="questions" required>
             </div>
         </div>
         <div class="field">
