@@ -44,6 +44,11 @@ class FaqController
      */
     public function store(Request $request)
     {
+        request()-> validate([
+            'title' => 'required',
+            'body' => 'required'
+
+        ]);
         $post = new Faq();
 
         $post->questions = request('questions');

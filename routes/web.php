@@ -31,7 +31,6 @@ Route::get('/blog/create', [BlogController::class, 'create']);
 Route::get('/blog/{article}/edit', [BlogController::class, 'edit']);
 Route::delete('/blog/{article}/edit', [BlogController::class, 'destroy']);
 Route::post('/blog/{article}', [BlogController::class, 'update']);
-
 Route::post('/blog', [BlogController::class, 'store']);
 Route::get('/blog', [BlogController::class, 'show']);
 Route::post('/Faq', [FaqController::class, 'store']);

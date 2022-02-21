@@ -4,6 +4,8 @@ namespace app\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 
 class BlogController
 {
@@ -30,6 +32,11 @@ class BlogController
      */
     public function store(Request $request)
     {
+        request()-> validate([
+            'title' => 'required',
+            'body' => 'required'
+
+        ]);
         $post = new Article();
 
         $post->title = request('title');
@@ -46,6 +53,11 @@ class BlogController
 
     public function update(Request $request, $id)
     {
+        request()-> validate([
+            'title' => 'required',
+        'body' => 'required'
+
+        ]);
         $article = Article::find($id);
 
         $article->title = request('title');
